@@ -27,7 +27,7 @@
 # Apply request routing:
     kubectl apply -f traffic-control-v1.yaml
 # Apply request routing to v2 (with jason username):
-    kubectl apply -f traffic-control-v1.yaml
+    kubectl apply -f traffic-control-v2.yaml
 
 # Sleep gọi review: 
     kubectl exec $(kubectl get pod -l app=sleep -o jsonpath='{.items[0].metadata.name}') -- curl -sS http://reviews:9080/reviews/7
